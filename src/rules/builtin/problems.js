@@ -1,6 +1,6 @@
-const { mapOptionsAsErrors } = require("../utils");
+const { mapOptionsAsErrors } = require("../../utils");
 
-module.exports = mapOptionsAsErrors({
+exports.problems = mapOptionsAsErrors({
   "array-callback-return": { allowImplicit: false, checkForEach: true },
   "constructor-super": true,
   "for-direction": true,
