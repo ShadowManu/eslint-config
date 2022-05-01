@@ -2,7 +2,7 @@
   "name": "@shadowmanu/eslint-config",
   "version": "0.1.0",
   "description": "A very strict ESLint config that the present you will hate and the future you will thank you",
-  "main": "index.cjs",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
