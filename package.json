@@ -2,8 +2,9 @@
   "name": "@shadowmanu/eslint-config",
   "version": "0.1.0",
   "description": "A very strict ESLint config that the present you will hate and the future you will thank you",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,6 +24,7 @@
     "@typescript-eslint/parser": "^5.21.0"
   },
   "devDependencies": {
+    "@types/eslint": "^8.4.1",
     "typescript": "^4.6.4"
   },
   "peerDependencies": {

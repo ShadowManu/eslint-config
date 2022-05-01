@@ -1,6 +1,6 @@
-const { builtin } = require("./rules/builtin");
+import builtin from "./rules/builtin";
 
-module.exports = {
+export = {
   parser: "@typescript-eslint/parser",
   rules: {
     ...builtin,
