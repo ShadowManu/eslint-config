@@ -19,7 +19,14 @@
     "url": "https://github.com/ShadowManu/eslint-config/issues"
   },
   "homepage": "https://github.com/ShadowManu/eslint-config#readme",
+  "dependencies": {
+    "@typescript-eslint/parser": "^5.21.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.4"
+  },
   "peerDependencies": {
-    "eslint": ">= 8.0.0"
+    "eslint": ">= 8.0.0",
+    "typescript": ">= 4.0.0"
   }
 }
