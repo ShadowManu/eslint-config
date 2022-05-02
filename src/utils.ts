@@ -6,7 +6,7 @@ import type { Linter } from "eslint";
  * treat everything as an error and be as pedantic as possible.
  */
 export const mapOptionsAsErrors = (
-  rules: Record<string, boolean | unknown>
+  rules: Record<string, boolean | unknown[] | unknown>
 ) => {
   const result: Linter.RulesRecord = {};
 
@@ -14,6 +14,7 @@ export const mapOptionsAsErrors = (
     const value: Linter.RuleLevelAndOptions = (() => {
       if (options === false) return ["off"];
       if (options === true) return ["error"];
+      if (Array.isArray(options)) return ["error", ...options];
       return ["error", options];
     })();
 
